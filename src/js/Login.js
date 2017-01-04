@@ -5,16 +5,11 @@ class Login extends Component {
     render () {
         return (
             <div>
-                <header>App</header>
-                <menu>
-                    <ul>
-                    <Link to="/">Home</Link>
-                    <li><IndexLink to="/">Home</IndexLink></li>
-                    <li><Link to="/chat" activeClassName="active">About</Link></li>
-
-                    </ul>
-                </menu>
-                {this.props.children}
+                <header>LOGIN</header>
+                <div className="input_wrap">
+                    <input type="text" placeholder="닉네임을입력해주세요"></input>
+                    <button>확인</button>
+                </div>
             </div>
         )
     }

@@ -31,6 +31,7 @@ export default class ChatList extends React.Component {
   }
   
   componentWillMount () {
+    console.log("_this.props.store",this.props.store)
     let socket = io();
     let _this = this;
     this.setState({socket:socket})
@@ -51,7 +52,10 @@ export default class ChatList extends React.Component {
 		});
 	}
   render() {
+    
     const { chats } = this.props.store
+    console.log("chats",chats)
+    console.log("this.props.store",this.props.store)
     let _this = this;
     const chatList = chats.map(value => {
       return(
