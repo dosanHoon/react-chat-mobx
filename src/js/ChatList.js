@@ -41,14 +41,14 @@ export default class ChatList extends React.Component {
   }
   
   componentDidMount() {
-		var username = ''
+		//var username = ''
 
-		do {
+		/*do {
 			username = prompt('닉네임:')
 		} while (!username.length)
-
+    */
 		this.setState({
-			userName: username
+			userName: this.props.store.nickName
 		});
 	}
   render() {

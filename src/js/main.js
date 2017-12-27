@@ -13,7 +13,7 @@ const app = document.getElementById("app")
 ReactDOM.render((
   <Router history={browserHistory} >
     <Route path="/" component={indexApp}>
-      <IndexRoute component={Login} />
+      <Route path="/login" component={() => (<Login store={ChatStore} />)} />
       <Route path="/chat" component={() => (<ChatList store={ChatStore} />)} />
     </Route>
   </Router>

@@ -15,9 +15,13 @@ class Chat {
 
 export class ChatStore {
     @observable chats = []
-
+    @observable nickName = ""
     sendMessage(value) {
         this.chats.push(new Chat(value))
+    }
+    inputNickName(value) {
+        this.nickName = value;
+        console.log("store", this.nickName)
     }
 }
 

@@ -8,10 +8,9 @@ class Login extends Component {
                 <header>MOBX REACT CHAT</header>
                 <menu>
                     <ul>
-                    <Link to="/">Home</Link>
-                    <li><IndexLink to="/">Home</IndexLink></li>
-                    <li><Link to="/chat" activeClassName="active">About</Link></li>
-
+                        <li><IndexLink to="/">Home</IndexLink></li>
+                        <li><Link to="/login" activeClassName="active">LOGIN</Link></li>
+                        <li><Link to="/chat" activeClassName="active">CHAT</Link></li>
                     </ul>
                 </menu>
                 {this.props.children}
